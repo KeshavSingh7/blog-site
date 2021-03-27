@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" href="./styles/index.css" />
 
-    <link rel="stylesheet" href="./styles/font.css" />
+    <link rel="stylesheet" href="./styles//font.css" />
 
     <script src="./scripts/index.js" defer></script>
 
@@ -86,7 +86,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <form>
+            <form id="signInForm">
               <label for="uname1">USERNAME</label>
               <input
                 type="text"
@@ -105,7 +105,9 @@
                 required
               />
               <br />
-              <button class="btn btn-success btn-block">Sign In</button>
+              <button class="btn btn-success btn-block" id="signInBtn">
+                Sign In
+              </button>
             </form>
           </div>
           <div class="modal-footer">
@@ -176,7 +178,11 @@
                 required
               />
               <br />
-              <button type="submit" class="btn btn-success btn-block">
+              <button
+                type="submit"
+                class="btn btn-success btn-block"
+                id="signUpBtn"
+              >
                 Sign Up
               </button>
             </form>
